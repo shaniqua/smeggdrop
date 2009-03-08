@@ -1,0 +1,18 @@
+smeggdrop
+=========
+A safe, public Tcl interpreter for eggdrop. 
+Interpreter state is versioned with Git.
+
+Requirements:
+- eggdrop
+- Tcl 8.4
+- tcllib
+- Ruby 1.8.6
+- RubyGems and Net::SSH
+- Git
+
+Installation:
+- Check out smeggdrop into your eggdrop root
+- Copy smeggdrop/smeggdrop.conf.default to smeggdrop.conf and edit it
+- Add this to the bottom of eggdrop.conf:
+    source smeggdrop/smeggdrop.tcl
