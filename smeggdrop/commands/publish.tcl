@@ -19,7 +19,7 @@ if [info exists smeggdrop_publish_url] {
         PUBLISH_USERNAME=$::smeggdrop_publish_username \
         PUBLISH_PASSWORD=$::smeggdrop_publish_password \
         PUBLISH_FILENAME=$::smeggdrop_publish_filename \
-        $SMEGGDROP_ROOT/bin/publish.rb < /tmp/publish-data]
+        $::SMEGGDROP_ROOT/bin/publish.rb < /tmp/publish-data]
 
       if [catch $cmd result] {
         error "publish failed"

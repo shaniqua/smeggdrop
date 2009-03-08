@@ -34,6 +34,6 @@ namespace eval dict {
 
 namespace eval commands {
   proc words {} {
-    dict::get_dictionary "$SMEGGDROP_ROOT/data/words"
+    dict::get_dictionary "$::SMEGGDROP_ROOT/data/words"
   }
 }
