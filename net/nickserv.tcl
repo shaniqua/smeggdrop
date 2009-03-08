@@ -1,10 +1,3 @@
-# The following variables must be set in smeggdrop.conf:
-#   set nickserv_nickname         MyNickname
-#   set nickserv_password         mypassword
-#   set nickserv_check            60
-#   set nickserv_service_nickname NickServ
-#   set nickserv_service_hostname irc.example.org
-
 if [info exists nickserv_nickname] {
   bind notc - "*This nickname is registered and protected*" notc:nickserv
 

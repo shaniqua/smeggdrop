@@ -1,6 +1,6 @@
 package require snit
 package require sha1
-source scripts/smeggdrop/interpx.tcl
+source $SMEGGDROP_ROOT/smeggdrop/interpx.tcl
 
 snit::type versioned_interpreter {
   variable state_path

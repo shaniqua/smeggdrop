@@ -1,11 +1,5 @@
-# The following variables can be set in smeggdrop.conf:
-#   set smeggdrop_line_length 460
-#   set smeggdrop_max_lines   10
-#   set smeggdrop_timeout     5000
-#   set smeggdrop_trigger     tcl
-
-source scripts/smeggdrop/versioned_interpreter.tcl
-source scripts/smeggdrop/commands.tcl
+source $SMEGGDROP_ROOT/smeggdrop/versioned_interpreter.tcl
+source $SMEGGDROP_ROOT/smeggdrop/commands.tcl
 
 proc interp_eval script {
   $::versioned_interpreter interpx . eval $script
@@ -64,8 +58,8 @@ if ![info exists smeggdrop_trigger]     {set smeggdrop_trigger     tcl}
 
 bind pub - $smeggdrop_trigger pub:tcl
 
-set versioned_interpreter [versioned_interpreter create %AUTO% state \
-  -verbose true -logcommand ::putlog -timeout $smeggdrop_timeout]
+set versioned_interpreter [versioned_interpreter create %AUTO% \
+  $smeggdrop_state_path -verbose true -logcommand ::putlog -timeout $smeggdrop_timeout]
 
 foreach alias [namespace eval commands {info procs}] {
   if {[lsearch -exact [commands::get hidden_procs] $alias] == -1} {

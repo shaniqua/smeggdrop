@@ -1,11 +1,3 @@
-# The following variables can be set in smeggdrop.conf:
-#   set smeggdrop_http_requests_per_eval 5
-#   set smeggdrop_http_request_interval  60
-#   set smeggdrop_http_request_limit     25
-#   set smeggdrop_http_post_limit        150000
-#   set smeggdrop_http_transfer_limit    150000
-#   set smeggdrop_http_time_limit        5000
-
 # 5 requests, per interpreter eval, per channel (at most 25 requests per minute)
 if ![info exists smeggdrop_http_requests_per_eval] {set smeggdrop_http_requests_per_eval 5}
 if ![info exists smeggdrop_http_request_interval]  {set smeggdrop_http_request_interval  60}

@@ -1,7 +1,10 @@
+# smeggdrop.tcl
+# Load this file from eggdrop.conf.
+
 encoding system utf-8
+set SMEGGDROP_ROOT [file dirname [info script]]
 
 if [file exists smeggdrop.conf] {source smeggdrop.conf}
-
-source scripts/ext/action.fix.tcl
-source scripts/ext/alltools.tcl
-source scripts/smeggdrop/smeggdrop.tcl
+source $SMEGGDROP_ROOT/ext/action.fix.tcl
+source $SMEGGDROP_ROOT/ext/alltools.tcl
+source $SMEGGDROP_ROOT/smeggdrop/smeggdrop.tcl

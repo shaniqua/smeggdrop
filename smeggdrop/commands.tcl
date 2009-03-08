@@ -1,6 +1,6 @@
-source scripts/smeggdrop/meta_proc.tcl
+source $SMEGGDROP_ROOT/smeggdrop/meta_proc.tcl
 
-foreach script [glob -nocomplain scripts/smeggdrop/commands/*.tcl] {
+foreach script [glob -nocomplain $SMEGGDROP_ROOT/smeggdrop/commands/*.tcl] {
   source $script
 }
 

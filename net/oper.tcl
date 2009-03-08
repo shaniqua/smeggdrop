@@ -1,9 +1,3 @@
-# The following variables must be set in smeggdrop.conf:
-#   set oper_nickname         MyOperName
-#   set oper_password         mypassword
-#   set oper_service_nickname OperServ
-#   set oper_service_hostname irc.example.org
-
 if [info exists oper_nickname] {
   # Oper on startup
   bind raw - "001" raw:operify
