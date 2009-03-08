@@ -1,4 +1,4 @@
-# The following variables can be set in eggdrop.conf:
+# The following variables can be set in smeggdrop.conf:
 #   set smeggdrop_http_requests_per_eval 5
 #   set smeggdrop_http_request_interval  60
 #   set smeggdrop_http_request_limit     25

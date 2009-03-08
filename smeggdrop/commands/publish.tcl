@@ -1,4 +1,4 @@
-# The following variables must be set in eggdrop.conf:
+# The following variables must be set in smeggdrop.conf:
 #   set smeggdrop_publish_url      http://www.example.org/
 #   set smeggdrop_publish_hostname my_ssh_hostname
 #   set smeggdrop_publish_username my_ssh_username

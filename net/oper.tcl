@@ -1,4 +1,4 @@
-# The following variables must be set in eggdrop.conf:
+# The following variables must be set in smeggdrop.conf:
 #   set oper_nickname         MyOperName
 #   set oper_password         mypassword
 #   set oper_service_nickname OperServ

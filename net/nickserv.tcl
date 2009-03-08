@@ -1,4 +1,4 @@
-# The following variables must be set in eggdrop.conf:
+# The following variables must be set in smeggdrop.conf:
 #   set nickserv_nickname         MyNickname
 #   set nickserv_password         mypassword
 #   set nickserv_check            60

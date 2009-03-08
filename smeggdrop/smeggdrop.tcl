@@ -1,4 +1,4 @@
-# The following variables can be set in eggdrop.conf:
+# The following variables can be set in smeggdrop.conf:
 #   set smeggdrop_line_length 460
 #   set smeggdrop_max_lines   10
 #   set smeggdrop_timeout     5000
