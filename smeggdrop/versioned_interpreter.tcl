@@ -117,6 +117,7 @@ snit::type versioned_interpreter {
     set index ${kind}s
     set filename [$self path $index [[set $index] get $key]]
     set file [open $filename r]
+    fconfigure $file -encoding utf-8
     set value [read $file]
     close $file
     return $value
@@ -142,6 +143,7 @@ snit::type versioned_interpreter {
     set name [[set $index] get $key]
     set filename [$self path $index $name]
     set file [open $filename w]
+    fconfigure $file -encoding utf-8
     puts $file $value
     close $file
     $self git add [file join $index $name]
