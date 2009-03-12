@@ -35,4 +35,8 @@ namespace eval commands {
     variable $var
     set $var
   }
+  
+  hidden proc apply {command arguments} {
+    uplevel [concat $command $arguments]
+  }
 }
