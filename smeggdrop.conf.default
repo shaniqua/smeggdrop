@@ -27,6 +27,7 @@ set smeggdrop_line_length             460                   ;# Maximum number of
 set smeggdrop_max_lines               10                    ;# Maximum number of lines to send per eval
 set smeggdrop_timeout                 5000                  ;# Maximum execution time for one eval
 set smeggdrop_trigger                 tcl                   ;# Prefix for triggering evaluation
+set smeggdrop_log_max_lines           100                   ;# Number of lines to keep per channel (comment out to disable logging)
 
 #
 # HTTP limits
