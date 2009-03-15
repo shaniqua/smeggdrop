@@ -23,7 +23,6 @@ set oper_service_hostname             irc.example.org       ;# OperServ's hostna
 # General smeggdrop settings
 #
 set smeggdrop_state_path              state                 ;# Directory (relative to eggdrop root) where state is kept
-set smeggdrop_line_length             460                   ;# Maximum number of characters to send in one line
 set smeggdrop_max_lines               10                    ;# Maximum number of lines to send per eval
 set smeggdrop_timeout                 5000                  ;# Maximum execution time for one eval
 set smeggdrop_trigger                 tcl                   ;# Prefix for triggering evaluation
