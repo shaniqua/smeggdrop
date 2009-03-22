@@ -45,7 +45,7 @@ namespace eval smeggdrop {
   }
   
   proc line_length_for channel {
-    expr 511 - [string length "PRIVMSG $::botname $channel :"]
+    expr 512 - [string length ":$::botname PRIVMSG $channel :\r\n"]
   }
   
   proc split_on_formatting string {
