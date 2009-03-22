@@ -6,6 +6,10 @@ namespace eval meta {
   proc line {} {
     commands::get line
   }
+  
+  proc uptime {} {
+    $::versioned_interpreter uptime
+  }
 }
 
 namespace eval commands {

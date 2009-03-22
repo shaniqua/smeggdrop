@@ -10,6 +10,7 @@ snit::type versioned_interpreter {
   variable aliases {}
   variable is_inside_eval 0
   variable state_changed 0
+  variable created_at
   
   option -verbose    -readonly true -default false
   option -timeout    -readonly true -default 5000
@@ -17,7 +18,8 @@ snit::type versioned_interpreter {
   
   constructor {path_to_state args} {
     set state_path $path_to_state
-
+    set created_at [clock seconds]
+    
     $self configurelist $args
     if [$self cget -verbose] {
       proc log message [list apply [$self cget -logcommand] {$message}]
@@ -28,6 +30,10 @@ snit::type versioned_interpreter {
   
   destructor {
     catch {$interpx destroy}
+  }
+  
+  method uptime {} {
+    expr [clock seconds] - $created_at
   }
   
   method interpx args {
